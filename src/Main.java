@@ -56,7 +56,7 @@ public class Main extends Application {
             double f = fiField.getNumber();
             double step = Main.this.step.getNumber();
 
-            return -(d * x * y + f) * step + y;
+            return -(d * x + f) * step + y;
         }
     };
 
@@ -79,7 +79,7 @@ public class Main extends Application {
             double f = fiField.getNumber();
             double step = Main.this.step.getNumber();
 
-            return (d * x * y + f) * step + y;
+            return (d * x + f) * step + y;
         }
     };
 
@@ -169,7 +169,7 @@ public class Main extends Application {
             }
         });
 
-        Label name = new Label("ИВТ-42БО Суендуков Михаил.");
+        Label name = new Label("ИВТ-42БО Бондарь Алеся.");
         name.setAlignment(Pos.BOTTOM_LEFT);
 
         leftPane.getChildren().addAll(wParams, wGrid, fParams, fGrid, res, commit, name);
